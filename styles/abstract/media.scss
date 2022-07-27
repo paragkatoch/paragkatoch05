@@ -1,0 +1,42 @@
+/* 	
+ *		Screen Sizes 
+ */
+
+$sizes: (
+  "mobile": 390px,
+  "tabletLarge": 1024px,
+  "desktopSmall": 1340px,
+  "desktop": 1440px,
+);
+
+@function size($size) {
+  @return map-get($map: $sizes, $key: $size);
+}
+
+/* 	
+ *		Media Queries 
+ */
+
+/* 	
+ Because its mobile-first layout, we need mobile styles applied for all screen widths, which then will be overridden by the respective media query 
+ */
+@mixin mobile {
+  @media screen {
+    @content;
+  }
+}
+@mixin tabletLarge {
+  @media screen and (min-width: size("tabletLarge")) {
+    @content;
+  }
+}
+@mixin desktopSmall {
+  @media screen and (min-width: size("desktopSmall")) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: size("desktop")) {
+    @content;
+  }
+}
