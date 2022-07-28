@@ -1,20 +1,10 @@
 import styles from "./styles.module.scss";
-import Oneport1 from "/assets/images/oneport/oneport1.png";
-import Oneport2 from "/assets/images/oneport/oneport2.png";
-import Oneport3 from "/assets/images/oneport/oneport3.png";
-
-import DevPortal1 from "/assets/images/devportal/devportal1.png";
-import DevPortal2 from "/assets/images/devportal/devportal2.png";
-import DevPortal3 from "/assets/images/devportal/devportal3.png";
-
-import SAV1 from "/assets/images/sav/sav1.png";
-import SAV2 from "/assets/images/sav/sav2.png";
-import SAV3 from "/assets/images/sav/sav3.png";
 
 import ContainerHeading from "../ContainerHeading";
 import Link from "next/link";
 import CustomImage from "../CustomImage";
 import { useEffect, useState } from "react";
+import { projects } from "../../data";
 
 export default function Projects() {
   return (
@@ -65,7 +55,7 @@ function Project({ data }) {
           {data.demo !== "" && (
             <button className={`${styles.project_button} button`}>
               <Link href={data.demo}>
-                <a>Live Demo</a>
+                <a target="_blank">Live Demo</a>
               </Link>
             </button>
           )}
@@ -73,7 +63,7 @@ function Project({ data }) {
           {data.code !== "" && (
             <button className={`${styles.project_button} button`}>
               <Link href={data.code}>
-                <a>Source Code</a>
+                <a target="_blank">Source Code</a>
               </Link>
             </button>
           )}
@@ -110,27 +100,3 @@ function Project({ data }) {
     </section>
   );
 }
-
-const projects = [
-  {
-    title: "OnePort",
-    description: `OnePort is a link-in-bio cum website builder platform,built using NextJs, Sass and Contentful.\n\nIt uses blocks instead of traditional cards (found in most link-in-bio sites) to represent data in an systematic and organiser manner.`,
-    code: "https://google.com",
-    demo: "https://google.com",
-    images: [Oneport1, Oneport2, Oneport3],
-  },
-  {
-    title: "OnePort",
-    description: `OnePort is a link-in-bio cum website builder platform,built using NextJs, Sass and Contentful.\n\nIt uses blocks instead of traditional cards (found in most link-in-bio sites) to represent data in an systematic and organiser manner.`,
-    code: "https://google.com",
-    demo: "https://google.com",
-    images: [DevPortal1, DevPortal2, DevPortal3],
-  },
-  {
-    title: "OnePort",
-    description: `OnePort is a link-in-bio cum website builder platform,built using NextJs, Sass and Contentful.\n\nIt uses blocks instead of traditional cards (found in most link-in-bio sites) to represent data in an systematic and organiser manner.`,
-    code: "https://google.com",
-    demo: "https://google.com",
-    images: [SAV1, SAV2, SAV3],
-  },
-];

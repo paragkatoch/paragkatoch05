@@ -31,8 +31,10 @@ export default function Home() {
               <Projects />
               <Contact />
               <footer>
-                <Link href="https://">
-                  <a className="p2">Designed & Built by Parag Katoch</a>
+                <Link href="https://github.com/paragkatoch/paragkatoch05">
+                  <a target="_blank" className="p2">
+                    Designed & Built by Parag Katoch
+                  </a>
                 </Link>
               </footer>
             </Loader>

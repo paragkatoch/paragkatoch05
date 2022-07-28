@@ -41,6 +41,7 @@
         transform: scale(0.98);
         padding: 0 0.5rem;
         display: none;
+        height: 100%;
 
         &:hover {
           transform: scale(1.02);
@@ -95,7 +96,7 @@
   .nav {
     .nav_elements {
       a {
-        display: inline;
+        display: block;
       }
     }
   }
