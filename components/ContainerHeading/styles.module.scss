@@ -1,0 +1,42 @@
+@use "abstract" as *;
+
+@include mobile {
+  .container_heading {
+    @include flex-center;
+    column-gap: 1rem;
+    max-width: 820px;
+
+    .heading {
+      white-space: nowrap;
+      color: var(--quaternary-color);
+    }
+
+    .hr {
+      border-bottom: 1px solid var(--quaternary-color);
+
+      &:first-child {
+        width: 1.5rem;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include tabletLarge {
+  .container_heading {
+    max-width: 80%;
+
+    .hr {
+      border-bottom: 1px solid var(--quaternary-color);
+
+      &:first-child {
+        width: 3.75rem;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}

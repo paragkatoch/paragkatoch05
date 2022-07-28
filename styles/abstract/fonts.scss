@@ -1,29 +1,30 @@
 @use "./media.scss" as *;
 
-:root {
+@mixin fonts {
   @include mobile {
-    --p: normal 400 14px/150% "Poppins", sans-serif;
+    --p: normal 400 12px/150% "Poppins", sans-serif;
     --p-large: normal 400 14px/150% "Poppins", sans-serif;
     --h2: normal 500 18px/150% "Poppins", sans-serif;
     --h1: normal 600 24px/100% "Poppins", sans-serif;
   }
 
   @include tabletLarge {
-    --p: normal 400 16px/150% "Poppins", sans-serif;
+    --p: normal 400 14px/150% "Poppins", sans-serif;
     --p-large: normal 400 16px/150% "Poppins", sans-serif;
-    --h2: normal 500 24px/150% "Poppins", sans-serif;
+    --h2: normal 500 21px/150% "Poppins", sans-serif;
     --h1: normal 600 32px/100% "Poppins", sans-serif;
   }
 
   @include desktopSmall {
-    --p: normal 400 16px/150% "Poppins", sans-serif;
-    --p-large: normal 400 20px/150% "Poppins", sans-serif;
+    --p: normal 400 14px/150% "Poppins", sans-serif;
+    --p-large: normal 400 18px/150% "Poppins", sans-serif;
     --h2: normal 500 24px/150% "Poppins", sans-serif;
     --h1: normal 600 40px/100% "Poppins", sans-serif;
   }
 
   .h1 {
     font: var(--h1);
+    letter-spacing: 0.02em;
   }
   .h2 {
     font: var(--h2);
@@ -32,9 +33,11 @@
   .p1 {
     font: var(--p-large);
     letter-spacing: 0.05em;
+    white-space: pre-wrap;
   }
   .p2 {
     font: var(--p);
     letter-spacing: 0.05em;
+    white-space: pre-wrap;
   }
 }

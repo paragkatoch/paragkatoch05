@@ -1,0 +1,79 @@
+@use "abstract" as *;
+
+@include mobile {
+  .about {
+    @include flex-column;
+    row-gap: 3rem;
+    padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
+
+    .content {
+      @include flex-center-sb-wrap;
+      row-gap: 2rem;
+
+      .content_container {
+        margin: 0 auto;
+      }
+
+      p.description {
+        width: 100%;
+        max-width: 30rem;
+        height: fit-content;
+        color: var(--quaternary-color);
+      }
+
+      .profile_pic {
+        @include flex-center-center;
+
+        width: 12.125rem;
+        height: 13rem;
+        overflow: hidden;
+
+        svg {
+          width: 100%;
+          > g > path {
+            fill: var(--tertiary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about .content .content_container {
+    margin: 0;
+  }
+}
+
+@include tabletLarge {
+  .about {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 3.5rem;
+
+    .content {
+      padding: 0 2.5rem;
+      max-width: 59rem;
+    }
+  }
+}
+
+@include desktopSmall {
+  .about {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 4.5rem;
+
+    .content {
+      padding: 0 3.5rem;
+      max-width: 81rem;
+
+      p.description {
+        max-width: 37.875rem;
+      }
+
+      .profile_pic {
+        width: 17.44rem;
+        height: 18.69rem;
+      }
+    }
+  }
+}

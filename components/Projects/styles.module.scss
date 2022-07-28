@@ -1,0 +1,178 @@
+@use "abstract" as *;
+
+.projects {
+  @include flex-column;
+  padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
+  row-gap: 3rem;
+
+  .projects_container {
+    @include flex-center-column;
+    row-gap: 4rem;
+    padding: 1rem 0;
+
+    .project {
+      @include flex-column;
+      row-gap: 1rem;
+
+      width: 100%;
+      max-width: 32rem;
+      border-radius: 0.5rem;
+      background-color: var(--secondary-color);
+
+      .data {
+        @include flex-sb-column;
+        height: 20rem;
+        padding: 1.5rem 1rem;
+
+        .text {
+          h2,
+          p {
+            color: var(--quaternary-color);
+          }
+          p {
+            margin-top: 1.5rem;
+            max-width: 24rem;
+          }
+        }
+
+        .project_buttons {
+          display: flex;
+          column-gap: 2rem;
+
+          .project_button {
+            border-radius: 0.5rem;
+
+            a {
+              display: block;
+              padding: 1rem 1.5rem;
+              color: var(--quaternary-color);
+            }
+          }
+        }
+      }
+
+      .carousel {
+        @include flex-column;
+
+        .image_slide {
+          --index: 0;
+          overflow: hidden;
+
+          .image_container {
+            display: flex;
+            min-width: 100%;
+            aspect-ratio: 1.35;
+
+            transform: translateX(calc(var(--index) * -100%));
+            transition: transform 0.5s ease-out;
+
+            .image {
+              width: 100%;
+              height: 100%;
+              flex-shrink: 0;
+            }
+          }
+        }
+        .slider {
+          @include flex-center-center;
+          column-gap: 0.5rem;
+
+          width: 100%;
+          height: 48px;
+
+          span {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+
+            cursor: pointer;
+            background-color: var(--tertiary-color);
+
+            &.active {
+              background-color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tabletLarge {
+  .projects {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 3.5rem;
+
+    .projects_container {
+      padding: 2rem 0;
+      row-gap: 6rem;
+
+      .project {
+        max-width: 40rem;
+        border-radius: 1rem;
+
+        .data {
+          padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+          height: 21rem;
+
+          .text p {
+            max-width: 30rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktopSmall {
+  .projects {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 4.5rem;
+
+    .projects_container {
+      padding: 2.5rem 0;
+
+      .project {
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 81rem;
+        height: 25rem;
+
+        .data {
+          height: 100%;
+          padding: 2.5rem;
+        }
+
+        .carousel {
+          width: fit-content;
+          height: 100%;
+          flex-direction: row;
+
+          .image_slide {
+            height: 100%;
+            aspect-ratio: 1.35;
+
+            .image_container {
+              width: 100%;
+              height: 100%;
+              min-height: 100%;
+
+              flex-direction: column;
+              transform: translateY(calc(var(--index) * -100%));
+            }
+          }
+
+          .slider {
+            width: 48px;
+            height: 100%;
+
+            flex-direction: column;
+            align-items: center;
+            row-gap: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

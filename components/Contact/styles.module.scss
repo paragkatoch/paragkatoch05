@@ -1,0 +1,60 @@
+@use "abstract" as *;
+
+.skillSet {
+  @include flex-column;
+  row-gap: 3rem;
+  padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
+  height: 520px;
+
+  .content {
+    @include flex-column;
+
+    h1,
+    p {
+      color: var(--quaternary-color);
+    }
+    p {
+      margin-top: 1rem;
+      max-width: 350px;
+    }
+
+    .connect_button {
+      padding: 0.75rem 1rem;
+      margin-top: 2rem;
+
+      width: fit-content;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: var(--quaternary-color);
+    }
+  }
+}
+
+@include tabletLarge {
+  .skillSet {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 3.5rem;
+
+    height: 600px;
+
+    .content {
+      padding: 0 2.5rem;
+
+      p {
+        margin-top: 2rem;
+        max-width: 420px;
+      }
+
+      .connect_button {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+@include desktopSmall {
+  .skillSet {
+    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    row-gap: 4.5rem;
+  }
+}

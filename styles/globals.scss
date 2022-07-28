@@ -1,13 +1,45 @@
 @use "./abstract/" as *;
 
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
+:root {
+  @include fonts;
+  @include themes;
+
+  --transition-time: 0.3s;
+
+  @include mobile {
+    --screen-padding: 1.5rem;
+  }
+  @include tabletLarge {
+    --screen-padding: 2.5rem;
+  }
+  @include desktopSmall {
+    --screen-padding: 4.5rem;
+  }
+}
+
+html,
+body {
+  --primary-color: #d1e1f5;
+  --secondary-color: #162031;
+
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   background-color: var(--secondary-color);
+  scroll-behavior: smooth;
+
+  * {
+    transition: background-color var(--transition-time),
+      color var(--transition-time), fill var(--transition-time);
+
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 a {
@@ -15,16 +47,16 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
 
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-//   body {
-//     color: white;
-//     background: black;
-//   }
-// }
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    box-shadow: none;
+    outline: none;
+  }
+}
