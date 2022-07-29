@@ -1,10 +1,10 @@
 export const mail = "paragkatoch5@gmail.com";
 
 export const schemes = {
-  blue_night: "blue_night",
+  blue_moon: "blue_moon",
   green_goblin: "green_goblin",
-  red_robin: "red_robin",
-  white_black: "white_black",
+  red_rampage: "red_rampage",
+  classic: "classic",
 };
 
 export const themes = {

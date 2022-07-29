@@ -7,10 +7,7 @@ export const useColorScheme = () => {
   return useContext(SchemeContext) ?? [];
 };
 
-export default function SchemeProvider({
-  children,
-  scheme = schemes.white_black,
-}) {
+export default function SchemeProvider({ children, scheme = schemes.classic }) {
   const [colorScheme, setColorScheme] = useState("");
 
   useEffect(() => {

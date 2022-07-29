@@ -38,7 +38,7 @@ export default function Home() {
         <GoogleAnalytics />
 
         <ThemeProvider>
-          <SchemeProvider scheme={schemes.blue_night}>
+          <SchemeProvider scheme={schemes.blue_moon}>
             <Loader>
               <Nav duration={0.5} />
               <Hero />

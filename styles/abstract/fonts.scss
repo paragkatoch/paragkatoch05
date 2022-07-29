@@ -1,6 +1,8 @@
 @use "./media.scss" as *;
 
 @mixin fonts {
+  /*  fonts */
+
   @include mobile {
     --p: normal 400 0.75rem/150% "Poppins", sans-serif;
     --p-large: normal 400 0.875rem/150% "Poppins", sans-serif;

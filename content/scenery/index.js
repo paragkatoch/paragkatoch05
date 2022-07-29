@@ -4,8 +4,8 @@ import GreenGoblin from "./assets/green-goblin.png";
 import RedRobin from "./assets/red-robin.png";
 
 export const sceneryContent = {
-  white_black: BlackWhite,
-  blue_night: BlueNight,
+  classic: BlackWhite,
+  blue_moon: BlueNight,
   green_goblin: GreenGoblin,
-  red_robin: RedRobin,
+  red_rampage: RedRobin,
 };

@@ -1,34 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://paragkatoch.me/">
+    <img alt="Gatsby" src="./assets/logo.svg" width="100" />
+    <h2 align="center">Parag Katoch</h2>
+  </a>
+</p> 
+<h1 align="center">paragkatoch.me</h1>
 
-## Getting Started
+This is my personal website built with NextJs and SASS. I got in inspiration of this project from [Brittany Chiang](https://brittanychiang.com/) and [Anurag Hazra](https://anuraghazra.dev/) website, kindy checkout their website as well.
 
-First, run the development server:
+This website contains 4 themes each having light and dark variants, with sections like home, about, skillset, projects and contact.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[![Parag Katoch Site Preview](./assets/sitePreview.png)][1]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bored with 1 theme? Now you got 8 :D
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<br/>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🚀 Installation & Set Up
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Fork the repository. then clone the repo locally by doing -
 
-## Learn More
+   ```bash
+   git clone https://github.com/paragkatoch/paragkatoch05.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Start the development server
 
-## Deploy on Vercel
+   ```bash
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🚀 Building and Running for Production
+
+1. Generate a full static production build
+
+   ```sh
+   yarn build
+   ```
+
+1. Preview the site as it will appear once deployed
+
+   ```sh
+   yarn start
+   ```
+
+---
+
+<br/>
+
+## ⚙️ Technologies Used
+
+1. NextJs
+2. SASS for styling
+3. Framer-motion of animation
+
+<br/>
+
+## 📂 Project structure?
+
+    .
+    ├── components
+    │   ├─── About
+    │   ├─── Contact
+    │   ├─── ContainerHeading
+    │   ├─── CustomImage
+    │   ├─── Hero
+    │   ├─── LogoAnimation
+    │   ├─── Nav
+    │   ├─── Projects
+    │   ├─── Scenery
+    │   ├─── SkillSet
+    │   └─── Setup
+    │        ├─── GoogleAnalytics
+    │        └─── setTrueHeight
+    ├── content
+    │   ├─── assets
+    │   ├─── about
+    │   ├─── hero
+    │   ├─── nav
+    │   ├─── project
+    │   ├─── scenery
+    │   └─── skillSet
+    ├─── context
+    ├─── hooks
+    ├─── pages
+    ├─── public
+    └─── styles
+
+<br/>
+
+## 🎨 Theme Reference
+
+| Theme        | Light | Dark |
+| ------------ | ----- | ---- |
+| classic      | ✅    | ✅   |
+| blue oon     | ✅    | ✅   |
+| green goblin | ✅    | ✅   |
+| red rampage  | ✅    | ✅   |
+
+---
+
+<br/>
+
+## 🤝 Contributing
+
+If you find a bug, have a suggestion, a feature request, or if you simply want to contact me, feel free to reach out !
+
+<!-- links to your social media accounts -->
+
+[1]: https://paragkatoch.me
+[2]: https://github.com/paragkatoch
+[3]: https://github.com/paragkatoch/paragkatoch05
