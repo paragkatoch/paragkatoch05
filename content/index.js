@@ -14,3 +14,9 @@ export const themes = {
 
 export const footer = "Designed & Built by Parag Katoch";
 export const repo = "https://github.com/paragkatoch/paragkatoch05";
+
+export const name = "Parag Katoch";
+export const description =
+  "Parag Katoch is a self-taught front-end developer from New Delhi, India. He is currently working at osenorth as a front-end engineer, busy designing and building creative digital products and services.";
+export const url = "https://paragatkatoch.me";
+export const image = `${url}/images/paragkatoch.png`;

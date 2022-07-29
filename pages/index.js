@@ -14,12 +14,25 @@ import Hero from "../components/Hero";
 import LogoAnimation from "../components/LogoAnimation";
 
 import styles from "../styles/Home.module.scss";
-import { footer, repo, schemes } from "../content";
+import {
+  description,
+  footer,
+  image,
+  name,
+  repo,
+  schemes,
+  url,
+} from "../content";
 import setTrueHeight from "../components/Setup/setTrueHeight";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <AnimatePresence>
+      <Head>
+        <title>Parag Katoch</title>
+        <MetaTags />
+      </Head>
       <main className={`${styles.app}`}>
         <ThemeProvider>
           <SchemeProvider scheme={schemes.blue_night}>
@@ -60,4 +73,45 @@ function Loader({ children }) {
   }, []);
 
   return loaded ? animate ? <LogoAnimation /> : children : <></>;
+}
+
+function MetaTags() {
+  return (
+    <>
+      <meta key="og:locale" property="og:locale" content="en_IN" />
+      <meta key="description" name="description" content={description} />
+
+      <meta key="og:site_name" property="og:site_name" content="paragkatoch" />
+      <meta key="og:title" property="og:title" content={name} />
+      <meta
+        key="og:description"
+        property="og:description"
+        content={description}
+      />
+      <meta key="og:url" property="og:url" content={url} />
+      <meta key="og:type" property="og:type" content="website" />
+      <meta key="og:image" property="og:image" content={image} />
+      <meta key="og:image:url" property="og:image:secure_url" content={image} />
+      <meta key="og:image:alt" property="og:image:alt" content={name} />
+
+      <meta key="twitter:title" property="twitter:title" content={name} />
+      <meta
+        key="twitter:description"
+        property="twitter:description"
+        content={description}
+      />
+      <meta key="twitter:image" property="twitter:image" content={image} />
+      <meta
+        key="twitter:image:alt"
+        property="twitter:image:alt"
+        content={name}
+      />
+      <meta key="twitter:site" property="twitter:site" content={url} />
+      <meta
+        key="twitter:card"
+        name="twitter:card"
+        content="summary_large_image"
+      />
+    </>
+  );
 }

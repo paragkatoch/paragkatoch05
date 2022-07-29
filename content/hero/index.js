@@ -8,7 +8,7 @@ export const heroContent = {
   heading: "Parag Katoch",
   subHeading: "Frontend Web Developer",
   description:
-    "I’m a self-taught passionate FrontEnd developer from India, currently working at osenorth.",
+    "I’m a self-taught passionate front-end developer from India, currently working at osenorth.",
 
   buttonText: "Let’s Connect",
   code: `1  class <b>Person</b> {
