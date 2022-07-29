@@ -25,6 +25,7 @@ import {
 } from "../content";
 import setTrueHeight from "../components/Setup/setTrueHeight";
 import Head from "next/head";
+import GoogleAnalytics from "../components/Setup/GoogleAnalytics";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
         <MetaTags />
       </Head>
       <main className={`${styles.app}`}>
+        <GoogleAnalytics />
+
         <ThemeProvider>
           <SchemeProvider scheme={schemes.blue_night}>
             <Loader>
