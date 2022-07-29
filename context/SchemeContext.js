@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { schemes } from "../data";
+import { schemes } from "../content";
 
 const SchemeContext = createContext([]);
 

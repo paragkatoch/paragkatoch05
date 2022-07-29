@@ -3,10 +3,10 @@
  */
 
 $sizes: (
-  "mobile": 390px,
-  "tabletLarge": 1024px,
-  "desktopSmall": 1340px,
-  "desktop": 1440px,
+  "mobile": 24.375rem,
+  "tabletLarge": 64rem,
+  "desktopSmall": 83.75rem,
+  "desktop": 90rem,
 );
 
 @function size($size) {

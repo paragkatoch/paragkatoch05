@@ -1,30 +1,29 @@
-import styles from "./styles.module.scss";
-
 import Link from "next/link";
 import { useColorScheme } from "../../context/SchemeContext";
-import { schemes, socialLinks } from "../../data";
 import { motion } from "framer-motion";
+
+import styles from "./styles.module.scss";
+import { mail, schemes } from "../../content";
+import { heroContent, socialLinks } from "../../content/hero";
+import Hexagon from "../../content/hero/assets/hexagon.svg";
 
 export default function Hero() {
   const [, setColorScheme] = useColorScheme();
 
   return (
-    <section id="home" className={styles.hero}>
+    <section id={heroContent.id} className={styles.hero}>
       <section className={styles.content}>
         <section className={styles.text}>
-          <p className="p1">Hello, I’m</p>
-          <h1 className="h1">Parag Katoch</h1>
-          <h2 className="h1">Frontend Web Developer</h2>
+          <p className="p1">{heroContent.eyebrow}</p>
+          <h1 className="h1">{heroContent.heading}</h1>
+          <h2 className="h1">{heroContent.subHeading}</h2>
 
-          <p className="p2">
-            I’m a self-taught passionate FrontEnd developer from India,
-            currently working at osenorth.
-          </p>
+          <p className="p2">{heroContent.description}</p>
         </section>
 
-        <Link href="mailto:paragkatoch5@gmail.com">
+        <Link href={`mailto:${mail}`}>
           <a className={`${styles.connect_button} button p2`}>
-            Let&apos;s Connect
+            {heroContent.buttonText}
           </a>
         </Link>
 
@@ -51,7 +50,7 @@ export default function Hero() {
 
       <section className={styles.code_schemes}>
         <section className={`${styles.code} container`}>
-          <pre dangerouslySetInnerHTML={{ __html: aboutCode }}></pre>
+          <pre dangerouslySetInnerHTML={{ __html: heroContent.code }}></pre>
         </section>
 
         <section className={`${styles.schemes} container`}>
@@ -69,15 +68,10 @@ export default function Hero() {
           })}
         </section>
       </section>
+
+      <div className={styles.hexagon}>
+        <Hexagon />
+      </div>
     </section>
   );
 }
-
-const aboutCode = `1  class <b>Person</b> {
-2      constructor() {
-3        this.name = "<b>Parag Katoch</b>";
-4        this.traits = ["design", "develop"];
-5        this.age = new Date().getFullYear() - 2002;
-6      }
-7  }
-`;

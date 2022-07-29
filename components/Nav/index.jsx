@@ -1,13 +1,9 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
-import { themes } from "../../data";
 import styles from "./styles.module.scss";
-import Sun from "/assets/icons/theme/sun.svg";
-import Moon from "/assets/icons/theme/moon.svg";
-import Logo from "/assets/icons/logo.svg";
-import Link from "next/link";
-
-const navElements = ["home", "about", "skillset", "work", "contact"];
+import { themes } from "../../content";
+import { navContent } from "../../content/nav";
 
 export default function Nav() {
   const [colorScheme, toggleColorScheme] = useTheme();
@@ -52,11 +48,11 @@ export default function Nav() {
   return (
     <nav className={`${styles.nav} ${!show ? styles.hide : ""} container`}>
       <section className={styles.nav_logo}>
-        <Logo />
+        <navContent.Logo />
       </section>
 
       <section className={styles.nav_elements}>
-        {navElements.map((element, index) => (
+        {navContent.navElements.map((element, index) => (
           <Link key={index} href={`/#${element}`}>
             <a className="p2">{element}</a>
           </Link>
@@ -69,7 +65,11 @@ export default function Nav() {
           onClick={OnClickHandler}
         >
           <span className={`${styles.icon_container} container`}>
-            {colorScheme !== themes.light ? <Sun /> : <Moon />}
+            {colorScheme !== themes.light ? (
+              <navContent.Sun />
+            ) : (
+              <navContent.Moon />
+            )}
           </span>
         </button>
       </section>

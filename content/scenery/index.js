@@ -1,0 +1,11 @@
+import BlackWhite from "./assets/black-white.png";
+import BlueNight from "./assets/blue-night.png";
+import GreenGoblin from "./assets/green-goblin.png";
+import RedRobin from "./assets/red-robin.png";
+
+export const sceneryContent = {
+  white_black: BlackWhite,
+  blue_night: BlueNight,
+  green_goblin: GreenGoblin,
+  red_robin: RedRobin,
+};

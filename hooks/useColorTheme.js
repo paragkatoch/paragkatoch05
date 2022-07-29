@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { themes } from "../data";
+import { themes } from "../content";
 
 /**
  * Hook manages theme

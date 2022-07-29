@@ -4,7 +4,7 @@
   .about {
     @include flex-column;
     row-gap: 3rem;
-    padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
+    padding: 3rem var(--screen-padding);
 
     .content {
       @include flex-center-sb-wrap;
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .about .content .content_container {
     margin: 0;
   }
@@ -47,7 +47,7 @@
 
 @include tabletLarge {
   .about {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    padding: 2.5rem var(--screen-padding) 4rem var(--screen-padding);
     row-gap: 3.5rem;
 
     .content {
@@ -59,7 +59,6 @@
 
 @include desktopSmall {
   .about {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
     row-gap: 4.5rem;
 
     .content {

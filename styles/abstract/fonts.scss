@@ -2,24 +2,24 @@
 
 @mixin fonts {
   @include mobile {
-    --p: normal 400 12px/150% "Poppins", sans-serif;
-    --p-large: normal 400 14px/150% "Poppins", sans-serif;
-    --h2: normal 500 18px/150% "Poppins", sans-serif;
-    --h1: normal 600 24px/100% "Poppins", sans-serif;
+    --p: normal 400 0.75rem/150% "Poppins", sans-serif;
+    --p-large: normal 400 0.875rem/150% "Poppins", sans-serif;
+    --h2: normal 500 1.125rem/150% "Poppins", sans-serif;
+    --h1: normal 600 1.5rem/100% "Poppins", sans-serif;
   }
 
   @include tabletLarge {
-    --p: normal 400 14px/150% "Poppins", sans-serif;
-    --p-large: normal 400 16px/150% "Poppins", sans-serif;
-    --h2: normal 500 21px/150% "Poppins", sans-serif;
-    --h1: normal 600 32px/100% "Poppins", sans-serif;
+    --p: normal 400 0.875rem/150% "Poppins", sans-serif;
+    --p-large: normal 400 1rem/150% "Poppins", sans-serif;
+    --h2: normal 500 1.3125rem/150% "Poppins", sans-serif;
+    --h1: normal 600 2rem/100% "Poppins", sans-serif;
   }
 
   @include desktopSmall {
-    --p: normal 400 14px/150% "Poppins", sans-serif;
-    --p-large: normal 400 18px/150% "Poppins", sans-serif;
-    --h2: normal 500 24px/150% "Poppins", sans-serif;
-    --h1: normal 600 40px/100% "Poppins", sans-serif;
+    --p: normal 400 0.875rem/150% "Poppins", sans-serif;
+    --p-large: normal 400 1.125rem/150% "Poppins", sans-serif;
+    --h2: normal 500 1.5rem/150% "Poppins", sans-serif;
+    --h1: normal 600 2.5rem/100% "Poppins", sans-serif;
   }
 
   .h1 {

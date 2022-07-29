@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
 import useColorTheme from "../hooks/useColorTheme";
-import { themes } from "../data";
+import { themes } from "../content";
 
 const ThemeContext = createContext([]);
 

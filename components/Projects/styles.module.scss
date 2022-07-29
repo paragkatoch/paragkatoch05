@@ -2,7 +2,7 @@
 
 .projects {
   @include flex-column;
-  padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
+  padding: 2.5rem var(--screen-padding);
   row-gap: 3rem;
 
   .projects_container {
@@ -78,7 +78,7 @@
           column-gap: 0.5rem;
 
           width: 100%;
-          height: 48px;
+          height: 3rem;
 
           span {
             width: 0.75rem;
@@ -100,7 +100,7 @@
 
 @include tabletLarge {
   .projects {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    padding: 2.5rem var(--screen-padding) 4rem var(--screen-padding);
     row-gap: 3.5rem;
 
     .projects_container {
@@ -126,7 +126,6 @@
 
 @include desktopSmall {
   .projects {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
     row-gap: 4.5rem;
 
     .projects_container {
@@ -164,7 +163,7 @@
           }
 
           .slider {
-            width: 48px;
+            width: 3rem;
             height: 100%;
 
             flex-direction: column;

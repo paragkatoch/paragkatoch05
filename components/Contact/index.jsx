@@ -1,23 +1,22 @@
 import Link from "next/link";
 import ContainerHeading from "../ContainerHeading";
 import styles from "./styles.module.scss";
+import { contactContent } from "../../content/contact";
+import { mail } from "../../content";
+import { aboutContent } from "../../content/about";
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles.skillSet}>
-      <ContainerHeading title="Let’s Talk" />
+    <section id={aboutContent.id} className={styles.skillSet}>
+      <ContainerHeading title={contactContent.title} />
 
       <section className={styles.content}>
-        <h1 className="h1">Get In Touch</h1>
+        <h1 className="h1">{contactContent.heading}</h1>
+        <p className="p2">{contactContent.description}</p>
 
-        <p className="p2">
-          Have something for me? or just wanna say “hi”? We should queue up a
-          time to chat. I’ll buy the coffee.
-        </p>
-
-        <Link href="mailto:paragkatoch5@gmail.com">
+        <Link href={`mailto:${mail}`}>
           <a className={`${styles.connect_button} button p2`}>
-            Let&apos;s Connect
+            {contactContent.buttonText}
           </a>
         </Link>
       </section>

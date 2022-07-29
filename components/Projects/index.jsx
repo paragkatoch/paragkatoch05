@@ -1,18 +1,17 @@
-import styles from "./styles.module.scss";
-
-import ContainerHeading from "../ContainerHeading";
 import Link from "next/link";
-import CustomImage from "../CustomImage";
 import { useEffect, useState } from "react";
-import { projects } from "../../data";
+import ContainerHeading from "../ContainerHeading";
+import CustomImage from "../CustomImage";
+import styles from "./styles.module.scss";
+import { projectContent } from "../../content/project";
 
 export default function Projects() {
   return (
-    <section id="work" className={styles.projects}>
-      <ContainerHeading title="Projects" />
+    <section id={projectContent.id} className={styles.projects}>
+      <ContainerHeading title={projectContent.title} />
 
       <section className={styles.projects_container}>
-        {projects.map((item, index) => (
+        {projectContent.projects.map((item, index) => (
           <Project key={index} data={{ ...item }} />
         ))}
       </section>

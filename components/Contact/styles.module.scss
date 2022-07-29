@@ -3,8 +3,8 @@
 .skillSet {
   @include flex-column;
   row-gap: 3rem;
-  padding: 6rem var(--screen-padding) 2rem var(--screen-padding);
-  height: 520px;
+  padding: 2.5rem var(--screen-padding);
+  height: 32.5rem;
 
   .content {
     @include flex-column;
@@ -15,7 +15,7 @@
     }
     p {
       margin-top: 1rem;
-      max-width: 350px;
+      max-width: 21.875rem;
     }
 
     .connect_button {
@@ -32,17 +32,16 @@
 
 @include tabletLarge {
   .skillSet {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
+    padding: 2.5rem var(--screen-padding) 4rem var(--screen-padding);
     row-gap: 3.5rem;
-
-    height: 600px;
+    height: 37.5rem;
 
     .content {
       padding: 0 2.5rem;
 
       p {
         margin-top: 2rem;
-        max-width: 420px;
+        max-width: 26.25rem;
       }
 
       .connect_button {
@@ -54,7 +53,6 @@
 
 @include desktopSmall {
   .skillSet {
-    padding: 5rem var(--screen-padding) 2rem var(--screen-padding);
     row-gap: 4.5rem;
   }
 }
