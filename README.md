@@ -6,9 +6,9 @@
 </p> 
 <h1 align="center">paragkatoch.me</h1>
 
-This is my personal website built with NextJs and SASS. I got in inspiration of this project from [Brittany Chiang](https://brittanychiang.com/) and [Anurag Hazra](https://anuraghazra.dev/) website, kindy checkout their website as well.
+This is my personal website built with NextJs and SASS. I got inspiration for this project from [Brittany Chiang](https://brittanychiang.com/) and [Anurag Hazra](https://anuraghazra.dev/) website, kindy checkout their website as well.
 
-This website contains 4 themes each having light and dark variants, with sections like home, about, skillset, projects and contact.
+This website contains 4 themes each having light and dark variants with sections like home, about, skillset, projects and contact.
 
 [![Parag Katoch Site Preview](./assets/sitePreview.png)][1]
 
@@ -52,7 +52,6 @@ Bored with 1 theme? Now you got 8 :D
    yarn start
    ```
 
----
 
 <br/>
 
@@ -64,7 +63,7 @@ Bored with 1 theme? Now you got 8 :D
 
 <br/>
 
-## 📂 Project structure?
+## 📂 Project Structure
 
     .
     ├── components
@@ -106,7 +105,7 @@ Bored with 1 theme? Now you got 8 :D
 | green goblin | ✅    | ✅   |
 | red rampage  | ✅    | ✅   |
 
----
+
 
 <br/>
 
