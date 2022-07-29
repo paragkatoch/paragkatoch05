@@ -19,4 +19,4 @@ export const name = "Parag Katoch";
 export const description =
   "Parag Katoch is a self-taught front-end developer from New Delhi, India. He is currently working at osenorth as a front-end engineer, busy designing and building creative digital products and services.";
 export const url = "https://paragatkatoch.me";
-export const image = `${url}/images/paragkatoch.png`;
+export const image = `${url}/images/og.png`;
