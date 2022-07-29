@@ -78,10 +78,13 @@ function Loader({ children }) {
 function MetaTags() {
   return (
     <>
-      <meta key="og:locale" property="og:locale" content="en_IN" />
+      <meta key="viewport" name="viewport" content="width=device-width" />
       <meta key="description" name="description" content={description} />
-
-      <meta key="og:site_name" property="og:site_name" content="paragkatoch" />
+      <meta
+        key="og:site_name"
+        property="og:site_name"
+        content="paragkatoch.me"
+      />
       <meta key="og:title" property="og:title" content={name} />
       <meta
         key="og:description"
