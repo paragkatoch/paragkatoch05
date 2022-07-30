@@ -3,11 +3,10 @@ import ContainerHeading from "../ContainerHeading";
 import styles from "./styles.module.scss";
 import { contactContent } from "../../content/contact";
 import { mail } from "../../content";
-import { aboutContent } from "../../content/about";
 
 export default function Contact() {
   return (
-    <section id={aboutContent.id} className={styles.skillSet}>
+    <section id={contactContent.id} className={styles.skillSet}>
       <ContainerHeading title={contactContent.title} />
 
       <section className={styles.content}>
