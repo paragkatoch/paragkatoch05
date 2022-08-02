@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://paragkatoch.me/">
-    <img alt="Gatsby" src="./assets/logo.svg" width="100" />
+    <img alt="Parag Katoch" src="./src/assets/logo.svg" width="100" />
     <h2 align="center">Parag Katoch</h2>
   </a>
 </p> 
@@ -10,7 +10,7 @@ This is my personal website built with NextJs and SASS. I got inspiration for th
 
 This website contains 4 themes each having light and dark variants with sections like home, about, skillset, projects and contact.
 
-[![Parag Katoch Site Preview](./assets/sitePreview.png)][1]
+[![Parag Katoch Site Preview](./src/assets/sitePreview.png)][1]
 
 Bored with 1 theme? Now you got 8 :D
 
