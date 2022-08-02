@@ -1,0 +1,58 @@
+@use "abstract" as *;
+
+.skillSet {
+	@include flex-column;
+	row-gap: 3rem;
+	padding: 2.5rem var(--screen-padding);
+	height: 32.5rem;
+
+	.content {
+		@include flex-column;
+
+		h1,
+		p {
+			color: var(--quaternary-color);
+		}
+		p {
+			margin-top: 1rem;
+			max-width: 21.875rem;
+		}
+
+		.connect_button {
+			padding: 0.75rem 1rem;
+			margin-top: 2rem;
+
+			width: fit-content;
+			border-radius: 0.5rem;
+			cursor: pointer;
+			color: var(--quaternary-color);
+		}
+	}
+}
+
+@include tabletLarge {
+	.skillSet {
+		padding: 2.5rem var(--screen-padding) 4rem var(--screen-padding);
+		row-gap: 3.5rem;
+		height: 37.5rem;
+
+		.content {
+			padding: 0 2.5rem;
+
+			p {
+				margin-top: 2rem;
+				max-width: 26.25rem;
+			}
+
+			.connect_button {
+				margin-top: 3rem;
+			}
+		}
+	}
+}
+
+@include desktopSmall {
+	.skillSet {
+		row-gap: 4.5rem;
+	}
+}

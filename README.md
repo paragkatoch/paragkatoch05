@@ -52,7 +52,6 @@ Bored with 1 theme? Now you got 8 :D
    yarn start
    ```
 
-
 <br/>
 
 ## ⚙️ Technologies Used
@@ -104,8 +103,6 @@ Bored with 1 theme? Now you got 8 :D
 | blue oon     | ✅    | ✅   |
 | green goblin | ✅    | ✅   |
 | red rampage  | ✅    | ✅   |
-
-
 
 <br/>
 
