@@ -100,7 +100,7 @@ Bored with 1 theme? Now you got 8 :D
 | Theme        | Light | Dark |
 | ------------ | ----- | ---- |
 | classic      | ✅    | ✅   |
-| blue oon     | ✅    | ✅   |
+| blue moon    | ✅    | ✅   |
 | green goblin | ✅    | ✅   |
 | red rampage  | ✅    | ✅   |
 
