@@ -65,33 +65,34 @@ Bored with 1 theme? Now you got 8 :D
 ## 📂 Project Structure
 
     .
-    ├── components
-    │   ├─── About
-    │   ├─── Contact
-    │   ├─── ContainerHeading
-    │   ├─── CustomImage
-    │   ├─── Hero
-    │   ├─── LogoAnimation
-    │   ├─── Nav
-    │   ├─── Projects
-    │   ├─── Scenery
-    │   ├─── SkillSet
-    │   └─── Setup
-    │        ├─── GoogleAnalytics
-    │        └─── setTrueHeight
-    ├── content
-    │   ├─── assets
-    │   ├─── about
-    │   ├─── hero
-    │   ├─── nav
-    │   ├─── project
-    │   ├─── scenery
-    │   └─── skillSet
-    ├─── context
-    ├─── hooks
-    ├─── pages
-    ├─── public
-    └─── styles
+    ├─── src
+    │     ├── components
+    │     ├─── About
+    │     ├─── Contact
+    │     ├─── ContainerHeading
+    │     ├─── CustomImage
+    │     ├─── Hero
+    │     ├─── LogoAnimation
+    │     ├─── Nav
+    │     ├─── Projects
+    │     ├─── Scenery
+    │     ├─── SkillSet
+    │     ├─── Setup
+    │     │    ├─── GoogleAnalytics
+    │     │    └─── setTrueHeight
+    │     ├── content
+    │     │   ├─── assets
+    │     │   ├─── about
+    │     │   ├─── hero
+    │     │   ├─── nav
+    │     │   ├─── project
+    │     │   ├─── scenery
+    │     │   └─── skillSet
+    │     ├─── context
+    │     ├─── hooks
+    │     ├─── pages
+    │     └─── styles
+    └─── public
 
 <br/>
 
