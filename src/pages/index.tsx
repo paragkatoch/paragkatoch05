@@ -30,36 +30,39 @@ import GoogleAnalytics from "../components/Setup/GoogleAnalytics";
 
 export default function Home() {
 	return (
-		<AnimatePresence>
+		<>
 			<Head>
 				<title>Parag Katoch</title>
 				<MetaTags />
 			</Head>
-			<main className={`${styles.app}`}>
-				<GoogleAnalytics />
 
-				<ThemeProvider theme={themes.light}>
-					<SchemeProvider scheme={schemes.blue_moon}>
-						<Loader>
-							<Nav />
-							<Hero />
-							<About />
-							<Scenery />
-							<SkillSet />
-							<Projects />
-							<Contact />
-							<footer>
-								<Link href={repo}>
-									<a target="_blank" className="p2">
-										{footer}
-									</a>
-								</Link>
-							</footer>
-						</Loader>
-					</SchemeProvider>
-				</ThemeProvider>
-			</main>
-		</AnimatePresence>
+			<AnimatePresence>
+				<main className={`${styles.app}`}>
+					<GoogleAnalytics />
+
+					<ThemeProvider theme={themes.light}>
+						<SchemeProvider scheme={schemes.blue_moon}>
+							<Loader>
+								<Nav />
+								<Hero />
+								<About />
+								<Scenery />
+								<SkillSet />
+								<Projects />
+								<Contact />
+								<footer>
+									<Link href={repo}>
+										<a target="_blank" className="p2">
+											{footer}
+										</a>
+									</Link>
+								</footer>
+							</Loader>
+						</SchemeProvider>
+					</ThemeProvider>
+				</main>
+			</AnimatePresence>
+		</>
 	);
 }
 

@@ -98,12 +98,15 @@
 
 				border-radius: 0.5rem;
 
-				> button {
+				button,
+				span {
+					display: block;
 					cursor: pointer;
 					width: 2.25rem;
 					height: 2.25rem;
 					border-radius: 0.25rem;
 				}
+
 				.classic {
 					background-color: var(--classic-color);
 				}

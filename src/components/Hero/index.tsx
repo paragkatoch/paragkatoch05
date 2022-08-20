@@ -57,14 +57,17 @@ export default function Hero() {
 				<section className={`${styles.schemes} container`}>
 					{Object.keys(schemes).map((scheme, index) => {
 						return (
-							<motion.button
-								initial={{ scale: 0.9 }}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.7 }}
+							<button
 								key={index}
 								onClick={() => setColorScheme(scheme as scheme)}
-								className={styles[scheme]}
-							></motion.button>
+							>
+								<motion.span
+									initial={{ scale: 1 }}
+									whileHover={{ scale: 0.9 }}
+									whileTap={{ animationDelay: "0.3s", scale: 0.7 }}
+									className={`${styles[scheme]} container`}
+								></motion.span>
+							</button>
 						);
 					})}
 				</section>
