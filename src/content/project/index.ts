@@ -30,7 +30,7 @@ export const projectContent = {
 			title: "My Portfolio Website",
 			description: `My Portfolio Website designed using figma and built using NextJs, Sanity and SASS.`,
 			code: "https://github.com/paragkatoch/paragkatoch05",
-			demo: "https://paragkatoch.vercel.app/",
+			demo: "https://paragkatoch.me/",
 			images: [Portfolio1, Portfolio2, Portfolio3, Portfolio4],
 		},
 		{
@@ -44,7 +44,7 @@ export const projectContent = {
 			title: "Sorting Algorithm Visualizer",
 			description: `Sorting Algorithm Visualizer presents the working of various sorting algorithms graphically, built using React.\n\nAlgorithms available: Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Insertion Sort.`,
 			code: "https://github.com/paragkatoch/sorting-algo-visualizer",
-			demo: "https://paragkatoch.github.io/sorting-algo-visualizer/",
+			demo: "https://sorting-algo-visualizer.paragkatoch.me",
 			images: [SAV1, SAV2, SAV3],
 		},
 	],
