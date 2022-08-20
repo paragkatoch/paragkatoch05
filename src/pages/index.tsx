@@ -21,6 +21,7 @@ import {
 	name,
 	repo,
 	schemes,
+	themes,
 	url,
 } from "../content";
 import setTrueHeight from "../components/Setup/setTrueHeight";
@@ -37,7 +38,7 @@ export default function Home() {
 			<main className={`${styles.app}`}>
 				<GoogleAnalytics />
 
-				<ThemeProvider>
+				<ThemeProvider theme={themes.light}>
 					<SchemeProvider scheme={schemes.blue_moon}>
 						<Loader>
 							<Nav />

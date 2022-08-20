@@ -8,25 +8,25 @@ export default function LogoAnimation() {
 		hidden: {
 			opacity: 0,
 			pathLength: 0,
-			fill: "rgba(209, 225, 245, 0)",
+			fill: getColor("0"),
 		},
 		visible: {
 			opacity: 1,
 			pathLength: 1,
-			fill: "rgba(209, 225, 245, 1)",
+			fill: getColor("1"),
 		},
 	};
 
 	const circle = {
 		hidden: {
-			strokeWidth: 0,
-			stroke: "rgba(209, 225, 245, 0.5)",
 			pathLength: 0,
+			strokeWidth: 0,
+			stroke: getColor("0.5"),
 		},
 		visible: {
 			pathLength: 1,
 			strokeWidth: 5,
-			stroke: "rgba(209, 225, 245, 1)",
+			stroke: getColor("1"),
 		},
 	};
 
@@ -70,6 +70,12 @@ export default function LogoAnimation() {
 	);
 }
 
+function getColor(opacity: string) {
+	const rgbColorCode = "64,119,174";
+
+	return `rgba(${rgbColorCode}, ${opacity})`;
+}
+
 const containerStyle = {
 	display: "flex",
 	minHeight: "calc(var(--vh, 1vh) * 100)",
@@ -83,7 +89,7 @@ const wrapperStyle = {
 const iconStyle = {
 	width: "56px",
 	overflow: "visible",
-	stroke: "#d1e1f5",
+	stroke: getColor("1"),
 	strokeWidth: 1,
 	strokeLinejoin: "round",
 	strokeLinecap: "round",
