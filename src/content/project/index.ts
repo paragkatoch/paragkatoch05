@@ -6,9 +6,10 @@ import DevPortal1 from "./assets/devportal/devportal1.png";
 import DevPortal2 from "./assets/devportal/devportal2.png";
 import DevPortal3 from "./assets/devportal/devportal3.png";
 
-import Portfolio1 from "./assets/portfolio/portfolio1.png";
-import Portfolio2 from "./assets/portfolio/portfolio2.png";
-import Portfolio3 from "./assets/portfolio/portfolio3.png";
+import Portfolio1 from "./assets/portfolio/blue.png";
+import Portfolio2 from "./assets/portfolio/green.png";
+import Portfolio3 from "./assets/portfolio/red.png";
+import Portfolio4 from "./assets/portfolio/white.png";
 
 import SAV1 from "./assets/sav/sav1.png";
 import SAV2 from "./assets/sav/sav2.png";
@@ -26,11 +27,11 @@ export const projectContent = {
 			images: [Oneport1, Oneport2, Oneport3],
 		},
 		{
-			title: "Sorting Algorithm Visualizer",
-			description: `Sorting Algorithm Visualizer presents the working of various sorting algorithms graphically, built using React.\n\nAlgorithms available: Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Insertion Sort.`,
-			code: "https://github.com/paragkatoch/sorting-algo-visualizer",
-			demo: "https://paragkatoch.github.io/sorting-algo-visualizer/",
-			images: [SAV1, SAV2, SAV3],
+			title: "My Portfolio Website",
+			description: `My Portfolio Website designed using figma and built using NextJs, Sanity and SASS.`,
+			code: "https://github.com/paragkatoch/paragkatoch05",
+			demo: "https://paragkatoch.vercel.app/",
+			images: [Portfolio1, Portfolio2, Portfolio3, Portfolio4],
 		},
 		{
 			title: "Dev-Portal",
@@ -40,11 +41,11 @@ export const projectContent = {
 			images: [DevPortal1, DevPortal2, DevPortal3],
 		},
 		{
-			title: "My Portfolio Website",
-			description: `My Portfolio Website designed using figma and built using NextJs, Sanity and SASS.`,
-			code: "https://github.com/paragkatoch/paragkatoch05",
-			demo: "https://paragkatoch.vercel.app/",
-			images: [Portfolio1, Portfolio2, Portfolio3],
+			title: "Sorting Algorithm Visualizer",
+			description: `Sorting Algorithm Visualizer presents the working of various sorting algorithms graphically, built using React.\n\nAlgorithms available: Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Insertion Sort.`,
+			code: "https://github.com/paragkatoch/sorting-algo-visualizer",
+			demo: "https://paragkatoch.github.io/sorting-algo-visualizer/",
+			images: [SAV1, SAV2, SAV3],
 		},
 	],
 };

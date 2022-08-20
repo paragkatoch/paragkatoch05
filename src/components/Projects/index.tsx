@@ -80,6 +80,7 @@ function Project({ data }: { data: typeof projectContent.projects[0] }) {
 								layout="fill"
 								objectFit="cover"
 								objectPosition="center top"
+								sizes="(min-width: 75em) 33vw,(min-width: 48em) 50vw,100vw"
 							/>
 						))}
 					</section>

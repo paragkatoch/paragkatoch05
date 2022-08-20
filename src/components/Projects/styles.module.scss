@@ -61,7 +61,7 @@
 					.image_container {
 						display: flex;
 						min-width: 100%;
-						aspect-ratio: 1.35;
+						aspect-ratio: 1.77;
 
 						transform: translateX(calc(var(--index) * -100%));
 						transition: transform 0.5s ease-out;
@@ -150,7 +150,7 @@
 
 					.image_slide {
 						height: 100%;
-						aspect-ratio: 1.35;
+						aspect-ratio: 1.77;
 
 						.image_container {
 							width: 100%;
