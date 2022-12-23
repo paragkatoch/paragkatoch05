@@ -23,7 +23,7 @@ export const projectContent = {
 			title: "OnePort",
 			description: `OnePort is a link-in-bio cum website builder platform,built using NextJs, Sass and Contentful.\n\nIt uses blocks instead of traditional cards (found in most link-in-bio sites) to represent data in an systematic and organiser manner.`,
 			code: "",
-			demo: "https://www.oneport.osenorth.co",
+			demo: "https://oneport.osenorth.co",
 			images: [Oneport1, Oneport2, Oneport3],
 		},
 		{
