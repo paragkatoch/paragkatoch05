@@ -1,4 +1,59 @@
-@use "./abstract/" as *;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-darkBlue;
+	}
+}
+
+@layer components {
+	/**
+		fonts
+	**/
+	.h1 {
+		@apply font-kano text-[32px] font-normal leading-[40px] lgs:text-[40px] lgs:leading-[50px];
+	}
+	.h2 {
+		@apply font-kano text-[28px] font-normal leading-[1.2] tracking-wider lgs:text-[32px];
+	}
+	.h3 {
+		@apply font-kano text-[20px] font-normal leading-[1.2] tracking-wider lgs:text-[24px];
+	}
+	.body {
+		@apply font-openSans text-[14px] font-normal leading-[19px] tracking-wider lgs:text-[16px] lgs:leading-[22px];
+	}
+	.tag {
+		@apply font-kano text-[12px] font-normal leading-[1.2] lgs:text-[14px];
+	}
+
+	/**
+		classes
+	**/
+
+	.screenPadding {
+		@apply px-[30px] md:px-[70px] lgs:px-[144px];
+	}
+	.screenMargin {
+		@apply mds:mx-[70px] mx-[30px] lgs:mx-[144px];
+	}
+	.lock-scroll {
+		@apply max-lgs:h-screen max-lgs:w-screen max-lgs:overflow-y-hidden;
+	}
+	.lock-scroll-screen {
+		@apply h-screen w-screen overflow-y-hidden;
+	}
+	.scrollbar-hide {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+
+		/* For Webkit-based browsers (Chrome, Safari and Opera) */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
 
 * {
 	box-sizing: border-box;
@@ -6,52 +61,25 @@
 	margin: 0;
 }
 
-:root {
-	@include fonts;
-	@include themes;
-
-	--transition-time: 0.3s;
-
-	@include mobile {
-		--screen-padding: 1.5rem;
-	}
-	@include tabletLarge {
-		--screen-padding: 2.5rem;
-	}
-	@include desktopSmall {
-		--screen-padding: 4.5rem;
-	}
-}
-
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Poppins", sans-serif;
-	background-color: var(--secondary-color);
 	scroll-behavior: smooth;
 
-	* {
-		transition: background-color var(--transition-time),
-			color var(--transition-time), fill var(--transition-time);
+	// scrollbar-width: thin;
 
-		-webkit-tap-highlight-color: transparent;
-	}
-	// overflow-x: hidden;
-
-	scrollbar-width: thin;
-
-	&::-webkit-scrollbar {
-		width: 0.5rem;
-	}
-	&::-webkit-scrollbar-track {
-		background: var(--secondary-color);
-	}
-	&::-webkit-scrollbar-thumb {
-		background-color: var(--tertiary-color);
-		border: 1px solid var(--tertiary-color);
-		border-radius: 0.625rem;
-	}
+	// &::-webkit-scrollbar {
+	// 	width: 0.5rem;
+	// }
+	// &::-webkit-scrollbar-track {
+	// 	background: var(--secondary-color);
+	// }
+	// &::-webkit-scrollbar-thumb {
+	// 	background-color: var(--tertiary-color);
+	// 	border: 1px solid var(--tertiary-color);
+	// 	border-radius: 0.625rem;
+	// }
 }
 
 a {
